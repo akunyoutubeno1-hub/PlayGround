@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="theme-color" content="#101d32">
+  <title>Little Lantern — A tiny platforming adventure</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Little Lantern home"><span class="brand-mark">✦</span><span>LITTLE<span class="brand-accent">LANTERN</span></span></a>
+      <div class="top-note"><span class="live-dot"></span> YOUR NEXT LITTLE ADVENTURE</div>
+      <button class="sound-toggle" id="soundToggle" aria-label="Toggle sound"><span id="soundIcon">♫</span><span id="soundLabel">SOUND ON</span></button>
+    </header>
+    <section class="game-wrap" aria-label="Little Lantern platform game">
+      <canvas id="game" width="960" height="540" aria-label="Platform game. Use arrow keys or A and D to move, space or up to jump."></canvas>
+      <div class="mobile-controls" aria-label="Touch controls">
+        <div class="move-controls"><button data-control="left" aria-label="Move left">←</button><button data-control="right" aria-label="Move right">→</button></div>
+        <button class="jump-control" data-control="jump" aria-label="Jump"><span>↑</span><small>JUMP</small></button>
+      </div>
+    </section>
+    <footer class="below-game"><div class="instructions"><span class="keycap">←</span><span class="keycap">→</span> <span>MOVE</span><i></i><span class="keycap wide">SPACE</span> <span>JUMP</span></div><div class="made-note">A pocket-sized journey through <b>three curious worlds</b></div></footer>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
